@@ -5,8 +5,11 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
       local lint = require 'lint'
+
       lint.linters_by_ft = {
-        markdown = { 'markdownlint' },
+        go = { 'golangcilint' }, -- and NOT golangci-lint as one may expect
+        ruby = { 'ruby' },
+        terraform = { 'tflint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
