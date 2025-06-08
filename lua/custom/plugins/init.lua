@@ -1,6 +1,7 @@
 vim.keymap.set('n', '<leader>1', ':only<CR>', { desc = 'only one window' })
 vim.keymap.set('n', '<leader>2', ':split<CR>', { desc = 'split horizontal' })
 vim.keymap.set('n', '<leader>3', ':vsplit<CR>', { desc = 'split vertical' })
+vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', { desc = 'toggle tree' })
 
 -- Auto-open Telescope oldfiles on startup
 vim.api.nvim_create_autocmd('VimEnter', {
