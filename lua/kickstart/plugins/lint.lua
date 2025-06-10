@@ -10,6 +10,7 @@ return {
         go = { 'golangcilint' }, -- and NOT golangci-lint as one may expect
         ruby = { 'ruby' },
         terraform = { 'tflint' },
+        python = { 'pylint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,

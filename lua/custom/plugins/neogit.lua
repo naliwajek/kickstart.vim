@@ -8,6 +8,6 @@ return {
   end,
   cmd = 'Neogit',
   keys = {
-    { '<leader>gg', '<cmd>Neogit<CR>', desc = 'Open Neogit' },
+    { '<leader>gs', '<cmd>Neogit<CR>', desc = 'Open Neogit' },
   },
 }
